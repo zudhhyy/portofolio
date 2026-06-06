@@ -1,6 +1,6 @@
 'use client';
 
-import confetti from 'canvas-confetti';
+import { fireWinConfetti } from '@/lib/fire-win-confetti';
 import { useEffect, useRef, useState } from 'react';
 
 type Cell = 'X' | 'O' | null;
@@ -51,30 +51,40 @@ function pickMove(board: Board, dumbMode: boolean): number {
   return dumbMode ? dumbMove(board) : bestMove(board);
 }
 
-function fireWinConfetti() {
-  const colors = ['#93c5fd', '#c4b5fd', '#fde047', '#ffffff'];
-  confetti({
-    particleCount: 90,
-    spread: 70,
-    origin: { y: 0.55 },
-    colors,
-  });
-  setTimeout(() => {
-    confetti({
-      particleCount: 50,
-      angle: 60,
-      spread: 55,
-      origin: { x: 0, y: 0.6 },
-      colors,
-    });
-    confetti({
-      particleCount: 50,
-      angle: 120,
-      spread: 55,
-      origin: { x: 1, y: 0.6 },
-      colors,
-    });
-  }, 180);
+type TicTacToeCellProps = {
+  value: Cell;
+  index: number;
+  thinking: boolean;
+  onPlay: (index: number) => void;
+};
+
+function TicTacToeCell({ value, index, thinking, onPlay }: TicTacToeCellProps) {
+  const faceUp = value !== null;
+
+  return (
+    <button
+      type="button"
+      onClick={() => onPlay(index)}
+      disabled={faceUp || thinking}
+      className="focus-ring size-20 [perspective:800px] disabled:cursor-default sm:size-24"
+      aria-label={faceUp ? `Cell ${value}` : 'Empty cell'}
+    >
+      <div
+        className={`relative size-full transition-transform duration-500 ease-out [transform-style:preserve-3d] motion-reduce:transition-none ${
+          faceUp ? '[transform:rotateY(180deg)]' : ''
+        }`}
+      >
+        <span className="absolute inset-0 flex items-center justify-center rounded-md border border-white/10 bg-white/[0.04] [backface-visibility:hidden] hover:border-blue-300/40" />
+        <span
+          className={`absolute inset-0 flex items-center justify-center rounded-md border border-white/10 bg-white/[0.08] text-3xl font-bold [backface-visibility:hidden] [transform:rotateY(180deg)] ${
+            value === 'X' ? 'text-blue-300' : 'text-violet-300'
+          }`}
+        >
+          {value}
+        </span>
+      </div>
+    </button>
+  );
 }
 
 export function TicTacToe() {
@@ -159,21 +169,13 @@ export function TicTacToe() {
         ) : (
           <>
             {thinking ? (
-              <p className="absolute top-4 animate-pulse text-sm font-medium text-violet-300">
+              <p className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center animate-pulse text-sm font-medium text-violet-300">
                 {dumbMode ? 'CPU is guessing...' : 'CPU is thinking...'}
               </p>
             ) : null}
             <div className={`grid grid-cols-3 gap-2 ${thinking ? 'opacity-70' : ''}`}>
               {board.map((cell, index) => (
-                <button
-                  key={index}
-                  type="button"
-                  onClick={() => play(index)}
-                  disabled={Boolean(cell) || thinking}
-                  className="focus-ring flex size-20 items-center justify-center rounded-md border border-white/10 bg-white/[0.04] text-3xl font-bold transition hover:border-blue-300/40 disabled:cursor-default sm:size-24"
-                >
-                  <span className={cell === 'X' ? 'text-blue-300' : 'text-violet-300'}>{cell}</span>
-                </button>
+                <TicTacToeCell key={index} value={cell} index={index} thinking={thinking} onPlay={play} />
               ))}
             </div>
           </>

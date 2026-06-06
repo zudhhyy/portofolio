@@ -1,6 +1,6 @@
 'use client';
 
-import confetti from 'canvas-confetti';
+import { fireWinConfetti } from '@/lib/fire-win-confetti';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 const WIDTH = 420;
@@ -59,15 +59,6 @@ function initialState(): GameState {
     running: false,
     attached: true,
   };
-}
-
-function fireWinConfetti() {
-  const colors = ['#93c5fd', '#c4b5fd', '#fde047', '#ffffff'];
-  confetti({ particleCount: 90, spread: 70, origin: { y: 0.55 }, colors });
-  setTimeout(() => {
-    confetti({ particleCount: 50, angle: 60, spread: 55, origin: { x: 0, y: 0.6 }, colors });
-    confetti({ particleCount: 50, angle: 120, spread: 55, origin: { x: 1, y: 0.6 }, colors });
-  }, 180);
 }
 
 export function BlockBreaker() {
