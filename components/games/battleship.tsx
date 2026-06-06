@@ -103,7 +103,7 @@ export function Battleship() {
 
   return (
     <div>
-      <div className="flex h-[340px] items-center justify-center rounded-lg border border-white/10 bg-black/30 p-4">
+      <div className="flex h-[360px] items-center justify-center rounded-lg border border-white/10 bg-black/30 p-4">
         <div className="grid gap-1" style={{ gridTemplateColumns: `repeat(${SIZE}, minmax(0, 1fr))` }}>
           {Array.from({ length: SIZE * SIZE }, (_, i) => {
             const row = Math.floor(i / SIZE);

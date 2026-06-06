@@ -143,7 +143,7 @@ export function TicTacToe() {
 
   return (
     <div>
-      <div className="relative flex h-[320px] flex-col items-center justify-center rounded-lg border border-white/10 bg-black/30 p-4">
+      <div className="relative flex h-[360px] flex-col items-center justify-center rounded-lg border border-white/10 bg-black/30 p-4">
         {finished && endMessage ? (
           <div className="flex flex-col items-center gap-4 text-center">
             <p className={`text-4xl font-bold sm:text-5xl ${endColor}`}>{endMessage}</p>

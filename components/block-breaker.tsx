@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 const WIDTH = 420;
-const HEIGHT = 320;
+const HEIGHT = 360;
 const PADDLE_W = 76;
 const PADDLE_H = 10;
 const BALL_R = 5;
@@ -265,12 +265,12 @@ export function BlockBreaker() {
 
   return (
     <div>
-      <div className="overflow-hidden rounded-lg border border-white/10 bg-black/30">
+      <div className="h-[360px] overflow-hidden rounded-lg border border-white/10 bg-black/30">
         <canvas
           ref={canvasRef}
           width={WIDTH}
           height={HEIGHT}
-          className="block w-full cursor-crosshair touch-none"
+          className="block h-full w-full cursor-crosshair touch-none"
           onMouseMove={(e) => setPaddleFromClientX(e.clientX)}
           onTouchMove={(e) => {
             e.preventDefault();

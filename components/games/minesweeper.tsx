@@ -205,7 +205,7 @@ export function Minesweeper() {
 
   return (
     <div>
-      <div className="flex h-[320px] items-center justify-center rounded-lg border border-white/10 bg-black/30 p-4">
+      <div className="flex h-[360px] items-center justify-center rounded-lg border border-white/10 bg-black/30 p-4">
         <div className="grid gap-0.5" style={{ gridTemplateColumns: `repeat(${COLS}, minmax(0, 1fr))` }}>
           {board.flatMap((row, rowIndex) =>
             row.map((cell, colIndex) => {

@@ -107,7 +107,7 @@ export function MemoryCard() {
 
   return (
     <div>
-      <div className="flex h-[320px] items-center justify-center rounded-lg border border-white/10 bg-black/30 p-4">
+      <div className="flex h-[360px] items-center justify-center rounded-lg border border-white/10 bg-black/30 p-4">
         <div className="grid gap-2" style={{ gridTemplateColumns: `repeat(${COLS}, minmax(0, 1fr))` }}>
           {cards.map((card, index) => {
             const faceUp = card.flipped || card.matched;
