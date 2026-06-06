@@ -100,7 +100,7 @@ export const projects: Project[] = [
       'Built monetization workflows for balances, transactions, settlements, and withdrawals',
       'Integrated OpenAPI-generated clients for reliable API contracts',
     ],
-    gradient: 'from-blue-500/30 via-violet-500/20 to-white/5',
+    gradient: 'from-blue-500/30 via-blue-500/15 to-cyan-400/10',
   },
   {
     name: 'Uobong',
@@ -114,7 +114,7 @@ export const projects: Project[] = [
       'Managed production releases through EAS Build and OTA updates',
       'Extended the platform with a web app and admin panel',
     ],
-    gradient: 'from-cyan-500/25 via-blue-500/20 to-emerald-400/10',
+    gradient: 'from-blue-500/30 via-blue-500/15 to-cyan-400/10',
     playStore: 'https://play.google.com/store/apps/details?id=com.uobong.app&hl=id',
     appStore: 'https://apps.apple.com/us/app/%EC%9A%B0%EC%98%A4%EB%B4%89-%EB%93%B1%EC%82%B0-%EC%9D%B8%EC%A6%9D%EC%9D%80-%EC%9A%B0%EC%98%A4%EB%B4%89-%EB%A6%AC%EA%B7%B8%ED%98%95-%EB%93%B1%EC%82%B0-%ED%94%8C%EB%9E%AB%ED%8F%BC/id6742874796',
     web: 'https://uobong.app/'
@@ -131,7 +131,7 @@ export const projects: Project[] = [
       'Integrated payment functionality, ticket validation, and transaction history',
       'Coordinated release readiness with QA, backend, and stakeholders',
     ],
-    gradient: 'from-fuchsia-500/30 via-violet-500/20 to-blue-400/10',
+    gradient: 'from-violet-500/30 via-violet-500/15 to-fuchsia-400/10',
     playStore: 'https://play.google.com/store/apps/details?id=app.chi.mobile&hl=id',
     appStore: 'https://apps.apple.com/id/app/chi-app-new/id6759359337?l=id',
   },
@@ -147,7 +147,7 @@ export const projects: Project[] = [
       'Implemented real-time dashboard analytics, user management, and event floorplan customization',
       'Optimized API calls and Redux state management to improve admin panel performance',
     ],
-    gradient: 'from-violet-500/30 via-fuchsia-500/15 to-sky-400/10',
+    gradient: 'from-violet-500/30 via-violet-500/15 to-fuchsia-400/10',
     web: 'https://web.chi.app/',
   },
   {
@@ -162,7 +162,7 @@ export const projects: Project[] = [
       'Collaborated with hardware engineers to ensure smooth app-to-device communication',
       'Deployed on Android and iOS with a focus on performance and ease of use',
     ],
-    gradient: 'from-amber-500/25 via-orange-500/20 to-yellow-400/10',
+    gradient: 'from-amber-500/30 via-amber-500/15 to-orange-400/10',
     playStore: 'https://play.google.com/store/apps/details?id=com.seoulsemicon.sunlikemte',
   },
   {
@@ -177,7 +177,7 @@ export const projects: Project[] = [
       'Incorporated delivery service API for order tracking and delivery management',
       'Collaborated with cross-functional teams on payment gateway and delivery integrations',
     ],
-    gradient: 'from-rose-500/25 via-amber-500/15 to-orange-400/10',
+    gradient: 'from-amber-500/30 via-amber-500/15 to-orange-400/10',
     playStore: 'https://play.google.com/store/apps/details?id=com.caffeineism',
     appStore: 'https://apps.apple.com/kr/app/%EC%B9%B4%ED%8E%98%EC%9D%B8%EC%A4%91%EB%8F%85/id6451965841',
   },
@@ -193,7 +193,7 @@ export const projects: Project[] = [
       'Set up site-wide SEO with Open Graph and Twitter cards for discoverability',
       'Implemented shared layout, navigation, and global state management for a consistent user experience',
     ],
-    gradient: 'from-sky-500/25 via-blue-500/20 to-indigo-400/10',
+    gradient: 'from-rose-500/30 via-rose-500/15 to-orange-400/10',
     web: 'https://forslice.com/',
   },
   {
@@ -208,7 +208,7 @@ export const projects: Project[] = [
       'Implemented testimonial showcases, sign-up CTAs, and social integrations for Instagram, WhatsApp, and email',
       'Delivered multilingual routing, SEO-ready structure, and a warm, immersive UI that reflects the wellness brand',
     ],
-    gradient: 'from-rose-500/25 via-orange-400/20 to-amber-300/10',
+    gradient: 'from-rose-500/30 via-rose-500/15 to-orange-400/10',
     web: 'https://soulfulgoddess.io/en',
   },
   {
@@ -223,7 +223,7 @@ export const projects: Project[] = [
       'Integrated Web3 wallet connectivity for secure user transactions',
       'Delivered polished front-end experiences with Lottie animations',
     ],
-    gradient: 'from-indigo-500/25 via-blue-500/20 to-purple-500/15',
+    gradient: 'from-fuchsia-500/30 via-fuchsia-500/15 to-violet-400/10',
     web: 'https://poopooville.io',
   },
   {
@@ -238,7 +238,7 @@ export const projects: Project[] = [
       'Ensured seamless integration with Ethereum smart contracts for transactions',
       'Delivered responsive UI with Chakra UI and React Router',
     ],
-    gradient: 'from-purple-500/25 via-violet-500/20 to-fuchsia-400/10',
+    gradient: 'from-fuchsia-500/30 via-fuchsia-500/15 to-violet-400/10',
     web: 'https://omakasea.com',
   },
   {
@@ -253,7 +253,7 @@ export const projects: Project[] = [
       'Implemented real-time chart updates for token trading activity',
       'Built performant front-end with React, TypeScript, and Tailwind CSS',
     ],
-    gradient: 'from-emerald-500/25 via-teal-500/20 to-cyan-400/10',
+    gradient: 'from-emerald-500/30 via-emerald-500/15 to-teal-400/10',
     web: 'https://mooncake.io',
   },
 ];
