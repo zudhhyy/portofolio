@@ -4,7 +4,7 @@ export const profile = {
   name: 'Tubagus Dhaifullah Zuhdi',
   role: 'Senior Frontend Engineer',
   headline: 'Senior Frontend Engineer Building Scalable Digital Experiences',
-  location: 'Indonesia, collaborating remotely worldwide',
+  location: 'Jakarta - Bali, Indonesia, collaborating remotely worldwide',
   email: 'tubagus.zuhdi2@gmail.com',
   phone: '+62 817 7412 4858',
   linkedin: 'https://www.linkedin.com/in/tubagus-dhaifullah-zuhdi/',

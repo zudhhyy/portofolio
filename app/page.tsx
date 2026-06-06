@@ -23,7 +23,7 @@ export default function Home() {
             <Reveal immediate>
               <div className="mb-6 inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/[0.04] px-3 py-2 text-sm text-neutral-300 backdrop-blur">
                 <Sparkles size={16} className="text-blue-300" />
-                Available for remote frontend and full-stack JavaScript roles
+                Available for remote or onsite frontend and full-stack JavaScript roles
               </div>
             </Reveal>
             <Reveal delay={0.08} immediate>
@@ -41,7 +41,6 @@ export default function Home() {
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
                   href="#projects"
-                  {...openInNewTab}
                   className="focus-ring inline-flex items-center justify-center gap-2 rounded-md bg-white px-5 py-3 text-sm font-semibold text-neutral-950 transition hover:bg-blue-100"
                 >
                   View Projects
@@ -57,7 +56,6 @@ export default function Home() {
                 </a>
                 <a
                   href="#contact"
-                  {...openInNewTab}
                   className="focus-ring inline-flex items-center justify-center gap-2 rounded-md border border-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:border-violet-300/40 hover:bg-white/[0.05]"
                 >
                   <Mail size={17} />
@@ -214,7 +212,7 @@ function FloatingStatus() {
       className="fixed bottom-4 right-10 z-30 hidden -translate-x-1/2 items-center gap-2 rounded-md border border-emerald-300/20 bg-neutral-950/80 px-4 py-2 text-sm text-emerald-100 shadow-card backdrop-blur-xl sm:flex"
     >
       <span className="size-2 rounded-full bg-emerald-300 shadow-[0_0_18px_rgba(110,231,183,0.9)]" />
-      Available for Remote Opportunities
+      Available for Remote or Onsite Opportunities
     </MotionDiv>
   );
 }
