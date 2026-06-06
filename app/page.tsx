@@ -23,11 +23,11 @@ export default function Home() {
             <Reveal immediate>
               <div className="mb-6 inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/[0.04] px-3 py-2 text-sm text-neutral-300 backdrop-blur">
                 <Sparkles size={16} className="text-blue-300" />
-                Available for remote or onsite frontend and full-stack JavaScript roles
+                Available for remote or onsite frontend developer roles
               </div>
             </Reveal>
             <Reveal delay={0.08} immediate>
-              <h1 className="gradient-text text-5xl font-semibold leading-[1.04] tracking-tight sm:text-6xl lg:text-7xl">
+              <h1 className="gradient-text text-4xl font-semibold leading-[1.04] tracking-tight sm:text-5xl lg:text-6xl">
                 {profile.headline}
               </h1>
             </Reveal>
@@ -148,7 +148,7 @@ export default function Home() {
             <div>
               <h3 className="text-2xl font-semibold text-white">Available for Remote Opportunities</h3>
               <p className="mt-3 max-w-2xl leading-7 text-neutral-400">
-                Interested in frontend development, full-stack JavaScript development, React Native product work, and contract engagements with
+                Interested in frontend development, React Native product work, and contract engagements with
                 teams that value clarity, quality, and momentum.
               </p>
             </div>

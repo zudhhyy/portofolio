@@ -3,7 +3,7 @@ import { Briefcase, Code2, Globe2, Layers3, Mail, MapPin, Rocket, Smartphone, Sp
 export const profile = {
   name: 'Tubagus Dhaifullah Zuhdi',
   role: 'Senior Frontend Engineer',
-  headline: 'Senior Frontend Engineer Building Scalable Digital Experiences',
+  headline: 'Frontend Engineer shipping React, Next.js & React Native products remotely',
   location: 'Jakarta - Bali, Indonesia, collaborating remotely worldwide',
   email: 'tubagus.zuhdi2@gmail.com',
   phone: '+62 817 7412 4858',

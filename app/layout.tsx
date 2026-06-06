@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | Tubagus D Zuhdi",
   },
   description:
-    "Senior Frontend Engineer and Full-Stack JavaScript Developer building scalable React, Next.js, TypeScript, and React Native products for remote teams worldwide.",
+    "Senior Frontend Developer building scalable React, Next.js, TypeScript, and React Native products for remote teams worldwide.",
   keywords: [
     "Senior Frontend Engineer",
     "React Developer",
@@ -18,6 +18,16 @@ export const metadata: Metadata = {
     "React Native",
     "Remote JavaScript Developer",
     "Full-Stack Developer",
+    "Frontend Developer",
+    "Remote Developer",
+    "Onsite Developer",
+    "Freelance Developer",
+    "Contract Developer",
+    "Full-Time Developer",
+    "Part-Time Developer",
+    "Remote Work",
+    "Onsite Work",
+    "Freelance Work",
   ],
   icons: {
     icon: [
