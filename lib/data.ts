@@ -4,7 +4,7 @@ export const profile = {
   name: 'Tubagus Dhaifullah Zuhdi',
   role: 'Senior Frontend Engineer',
   headline: 'Frontend engineer who turns complex ideas into polished, shippable products',
-  location: 'Jakarta - Bali, Indonesia — open to remote and onsite roles',
+  location: 'Jakarta - Bali, Indonesia — open to remote works',
   email: 'tubagus.zuhdi2@gmail.com',
   phone: '+62 817 7412 4858',
   linkedin: 'https://www.linkedin.com/in/tubagus-dhaifullah-zuhdi/',
@@ -286,7 +286,7 @@ export const experiences = [
   },
   {
     company: 'PT Healstation Indonesia',
-    location: 'Jakarta, Indonesia',
+    location: 'Jakarta, Indonesia, Hybrid',
     role: 'Frontend Developer',
     period: 'Jan 2022 - Nov 2024',
     tech: ['React', 'Next.js', 'React Native', 'TypeScript'],
@@ -298,7 +298,7 @@ export const experiences = [
   },
   {
     company: 'Desociety.io',
-    location: 'Bali, Indonesia',
+    location: 'Bali, Indonesia, Remote',
     role: 'Frontend Developer',
     period: 'Mar 2021 - Jan 2022',
     tech: ['React', 'Next.js', 'TypeScript', 'Ethers.js', 'Wagmi'],
@@ -321,7 +321,7 @@ export const experiences = [
   },
   {
     company: 'Omind Tech',
-    location: 'Depok, Indonesia',
+    location: 'Depok, Indonesia, Remote',
     role: 'React Native Developer',
     period: 'Jul 2020 - Sep 2020',
     tech: ['React Native', 'iOS', 'Android'],
@@ -338,5 +338,5 @@ export const contactItems = [
   { icon: Mail, label: 'Email', value: profile.email, href: `mailto:${profile.email}` },
   { icon: Globe2, label: 'LinkedIn', value: 'linkedin.com/in/tubagus-dhaifullah-zuhdi', href: profile.linkedin },
   { icon: Code2, label: 'GitHub', value: 'github.com/zudhhyy', href: profile.github },
-  { icon: MapPin, label: 'Base', value: profile.location, href: '#contact' },
+  { icon: MapPin, label: 'Base', value: profile.location, href: '/contact' },
 ];

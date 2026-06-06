@@ -4,19 +4,25 @@ import Lottie from "lottie-react";
 import { useEffect, useState } from "react";
 import starLottie from "@/lib/lotties/star.json";
 
-export function SpinningEarth() {
+type SpinningEarthProps = {
+  spin?: boolean;
+};
+
+export function SpinningEarth({ spin = true }: SpinningEarthProps) {
   const [rotation, setRotation] = useState(0);
   const [showMeteorMid, setShowMeteorMid] = useState(false);
   const [showMeteorRight, setShowMeteorRight] = useState(false);
 
   useEffect(() => {
+    if (!spin) return;
+
     const handleScroll = () => {
       setRotation(window.scrollY * 0.1);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [spin]);
 
   useEffect(() => {
     const midTimer = setTimeout(() => setShowMeteorMid(true), 2000);

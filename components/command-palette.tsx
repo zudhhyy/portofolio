@@ -7,9 +7,9 @@ import { MotionDiv } from "./motion";
 import { openHrefInNewTab } from "@/lib/link";
 
 const actions = [
-  { label: "View Projects", hint: "Jump to selected work", href: "#projects", icon: Search },
-  { label: "Read Experience", hint: "Open professional timeline", href: "#experience", icon: Command },
-  { label: "Contact Me", hint: "Start a hiring conversation", href: "#contact", icon: Mail },
+  { label: "View Projects", hint: "Open featured projects", href: "/projects", icon: Search },
+  { label: "Read Experience", hint: "Open professional timeline", href: "/experience", icon: Command },
+  { label: "Contact Me", hint: "Start a hiring conversation", href: "/contact", icon: Mail },
   { label: "Download Resume", hint: "Open PDF resume", href: profile.resume, icon: Download },
   { label: "LinkedIn", hint: "View professional profile", href: profile.linkedin, icon: ExternalLink },
 ];
@@ -43,10 +43,12 @@ export function CommandPalette() {
     if (href.startsWith("#")) {
       document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
       return;
-    } else {
-      openHrefInNewTab(href);
+    }
+    if (href.startsWith("/")) {
+      window.location.assign(href);
       return;
     }
+    openHrefInNewTab(href);
   }
 
   return (
