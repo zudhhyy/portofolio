@@ -1,4 +1,4 @@
-import { BlockBreaker } from '@/components/block-breaker';
+import { GameCarousel } from '@/components/game-carousel';
 import { ExperienceTimeline } from '@/components/experience-timeline';
 import { ContactForm } from '@/components/contact-form';
 import { MotionDiv, Reveal } from '@/components/motion';
@@ -66,7 +66,7 @@ export default function Home() {
           </div>
 
           <Reveal delay={0.18} className="hidden lg:block" immediate>
-            <BlockBreaker />
+            <GameCarousel />
           </Reveal>
         </div>
       </section>

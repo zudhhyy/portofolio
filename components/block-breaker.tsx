@@ -264,18 +264,7 @@ export function BlockBreaker() {
     status === 'won' ? 'You cleared the board!' : status === 'lost' ? 'Game over — try again' : 'Click or press Space to launch';
 
   return (
-    <div className="glass relative rounded-lg p-5">
-      <div className="mb-3 flex items-center justify-between gap-3">
-        <div>
-          <p className="text-sm text-neutral-400">Mini Game</p>
-          <h2 className="text-xl font-semibold">Block Breaker</h2>
-        </div>
-        <div className="flex items-center gap-2 text-xs font-medium">
-          <span className="rounded-md border border-white/10 bg-white/[0.04] px-2.5 py-1 text-blue-200">Score {score}</span>
-          <span className="rounded-md border border-white/10 bg-white/[0.04] px-2.5 py-1 text-emerald-200">Lives {lives}</span>
-        </div>
-      </div>
-
+    <div>
       <div className="overflow-hidden rounded-lg border border-white/10 bg-black/30">
         <canvas
           ref={canvasRef}
@@ -292,14 +281,18 @@ export function BlockBreaker() {
       </div>
 
       <div className="mt-3 flex items-center justify-between gap-2 text-xs text-neutral-400">
-        <p>{statusLabel}</p>
-        <button
+        <p className="text-white font-bold">{statusLabel}</p>
+        <div className="flex items-center gap-2">
+          <span className="rounded-md border border-white/10 px-2 py-1 text-blue-200">Score {score}</span>
+          <span className="rounded-md border border-white/10 px-2 py-1 text-emerald-200">Lives {lives}</span>
+          <button
           type="button"
           onClick={() => resetRound(false, true)}
           className="focus-ring rounded-md border border-white/10 px-2.5 py-1 text-neutral-300 transition hover:border-blue-300/40 hover:text-white"
         >
           Reset
-        </button>
+          </button>
+        </div>
       </div>
     </div>
   );
