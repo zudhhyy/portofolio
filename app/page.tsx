@@ -176,7 +176,7 @@ export default function Home() {
         description="Reach out for remote roles, freelance builds, technical leadership, or product engineering collaboration."
       >
         <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
-          <div className="space-y-3">
+          <div className="space-y-[18px]">
             {contactItems.map((item) => {
               const Icon = item.icon;
               return (
