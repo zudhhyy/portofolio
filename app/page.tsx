@@ -23,7 +23,7 @@ export default function Home() {
             <Reveal immediate>
               <div className="mb-6 inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/[0.04] px-3 py-2 text-sm text-neutral-300 backdrop-blur">
                 <Sparkles size={16} className="text-blue-300" />
-                Available for remote or onsite frontend developer roles
+                Available for remote and onsite frontend developer roles
               </div>
             </Reveal>
             <Reveal delay={0.08} immediate>
@@ -33,7 +33,7 @@ export default function Home() {
             </Reveal>
             <Reveal delay={0.16} immediate>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-neutral-300 sm:text-xl">
-                5+ years delivering React, Next.js, TypeScript, and React Native products for enterprise applications, startups, and remote
+                5+ years delivering React, Next.js, TypeScript, and React Native products for enterprise applications, startups, and
                 teams that care about maintainable architecture and polished user experience.
               </p>
             </Reveal>
@@ -137,19 +137,19 @@ export default function Home() {
       <Section
         id="experience"
         eyebrow="Experience"
-        title="A timeline of shipped products, architecture decisions, and remote collaboration."
+        title="A timeline of shipped products, architecture decisions, and cross-team collaboration."
       >
         <ExperienceTimeline />
       </Section>
 
-      <Section id="availability" eyebrow="Availability" title="Open to high-trust remote collaboration.">
+      <Section id="availability" eyebrow="Availability" title="Open to remote and onsite collaboration.">
         <div className="glass rounded-lg p-6 sm:p-8">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <div>
-              <h3 className="text-2xl font-semibold text-white">Available for Remote Opportunities</h3>
+              <h3 className="text-2xl font-semibold text-white">Available for Remote & Onsite Opportunities</h3>
               <p className="mt-3 max-w-2xl leading-7 text-neutral-400">
-                Interested in frontend development, React Native product work, and contract engagements with
-                teams that value clarity, quality, and momentum.
+                Interested in frontend development, React Native product work, and contract engagements — whether your team is distributed,
+                hybrid, or in-office.
               </p>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -171,7 +171,7 @@ export default function Home() {
         id="contact"
         eyebrow="Contact"
         title="Let’s build something scalable, elegant, and ready for production."
-        description="Reach out for full time roles, contract roles, remote roles, freelance builds, or product engineering collaboration."
+        description="Reach out for full-time, contract, remote, onsite, or hybrid roles, freelance builds, or product engineering collaboration."
       >
         <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="space-y-[18px]">
@@ -212,7 +212,7 @@ function FloatingStatus() {
       className="fixed bottom-4 right-10 z-30 hidden -translate-x-1/2 items-center gap-2 rounded-md border border-emerald-300/20 bg-neutral-950/80 px-4 py-2 text-sm text-emerald-100 shadow-card backdrop-blur-xl sm:flex"
     >
       <span className="size-2 rounded-full bg-emerald-300 shadow-[0_0_18px_rgba(110,231,183,0.9)]" />
-      Available for Remote or Onsite Opportunities
+      Available for Remote & Onsite Opportunities
     </MotionDiv>
   );
 }

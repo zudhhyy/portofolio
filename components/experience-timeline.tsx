@@ -6,9 +6,7 @@ import { useState } from 'react';
 import { MotionDiv } from './motion';
 
 export function ExperienceTimeline() {
-  const [open, setOpen] = useState<string[]>(() =>
-    experiences[0]?.company ? [experiences[0].company] : [],
-  );
+  const [open, setOpen] = useState<string[]>(experiences.map((experience) => experience.company));
 
   const handleClick = (company: string) => {
     setOpen((prev) =>

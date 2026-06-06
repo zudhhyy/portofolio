@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | Tubagus D Zuhdi",
   },
   description:
-    "Senior Frontend Developer building scalable React, Next.js, TypeScript, and React Native products for remote teams worldwide.",
+    "Senior Frontend Developer building scalable React, Next.js, TypeScript, and React Native products for remote, onsite, and hybrid teams.",
   keywords: [
     "Senior Frontend Engineer",
     "React Developer",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Tubagus D Zuhdi | Senior Frontend Engineer",
     description:
-      "Tubagus D Zuhdi's Portfolio - Building web and mobile products with React, Next.js, TypeScript, and React Native.",
+      "Tubagus D Zuhdi's Portfolio - Building web and mobile products with React, Next.js, TypeScript, and React Native. Open to remote and onsite opportunities.",
     type: "website",
   },
 };

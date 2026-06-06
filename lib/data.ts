@@ -3,8 +3,8 @@ import { Briefcase, Code2, Globe2, Layers3, Mail, MapPin, Rocket, Smartphone, Sp
 export const profile = {
   name: 'Tubagus Dhaifullah Zuhdi',
   role: 'Senior Frontend Engineer',
-  headline: 'Frontend Engineer shipping React, Next.js & React Native products remotely',
-  location: 'Jakarta - Bali, Indonesia, collaborating remotely worldwide',
+  headline: 'Frontend engineer who turns complex ideas into polished, shippable products',
+  location: 'Jakarta - Bali, Indonesia — open to remote and onsite roles',
   email: 'tubagus.zuhdi2@gmail.com',
   phone: '+62 817 7412 4858',
   linkedin: 'https://www.linkedin.com/in/tubagus-dhaifullah-zuhdi/',
@@ -29,7 +29,7 @@ export const aboutHighlights = [
   },
   {
     icon: Users,
-    title: 'Remote Product Delivery',
+    title: 'Cross-Team Product Delivery',
     text: 'Works closely with product managers, designers, backend engineers, QA, and stakeholders across distributed teams.',
   },
   {
@@ -332,7 +332,7 @@ export const experiences = [
   },
 ];
 
-export const availability = ['Remote Work', 'Freelance', 'Contract', 'Full-Time'];
+export const availability = ['Remote Work', 'Onsite Work', 'Full-Time', 'Contract', 'Freelance'];
 
 export const contactItems = [
   { icon: Mail, label: 'Email', value: profile.email, href: `mailto:${profile.email}` },
