@@ -186,6 +186,20 @@ export const projects: Project[] = [
     gradient: 'from-sky-500/25 via-blue-500/20 to-indigo-400/10',
   },
   {
+    name: 'Soulful Goddess',
+    type: 'Yoga Retreat & Wellness Platform',
+    description:
+      'Built the full marketing website for Soulful Goddess, a transformative yoga retreat brand in Mallorca by Vanessa Wolter — from retreat promotion and storytelling to testimonials, sign-up flows, and community engagement.',
+    stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'i18n'],
+    achievements: [
+      'Developed responsive pages for retreat listings, vision storytelling, products, FAQs, and private yoga events',
+      'Implemented testimonial showcases, sign-up CTAs, and social integrations for Instagram, WhatsApp, and email',
+      'Delivered multilingual routing, SEO-ready structure, and a warm, immersive UI that reflects the wellness brand',
+    ],
+    gradient: 'from-rose-500/25 via-orange-400/20 to-amber-300/10',
+    web: 'https://soulfulgoddess.io/en',
+  },
+  {
     name: 'Poopooville',
     type: 'Web3 DApp Platform',
     description:
