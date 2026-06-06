@@ -14,7 +14,7 @@ import { ArrowRight, Download, Mail, Sparkles } from 'lucide-react';
 
 export default function Home() {
   return (
-    <main className="relative z-10 min-h-screen overflow-hidden pb-40 text-white">
+    <main className="relative z-10 min-h-screen overflow-hidden pb-20 text-white">
       <SpinningEarth />
       <Navbar />
       <FloatingStatus />

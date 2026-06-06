@@ -8,7 +8,7 @@ type PageShellProps = {
 
 export function PageShell({ children }: PageShellProps) {
   return (
-    <main className="relative z-10 min-h-screen overflow-hidden pb-40 text-white">
+    <main className="relative z-10 min-h-screen overflow-hidden pb-20 text-white">
       <SpinningEarth spin={false} />
       <Navbar />
       <div className="pt-16">{children}</div>

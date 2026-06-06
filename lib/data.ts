@@ -1,4 +1,4 @@
-import { Briefcase, Code2, Globe2, Layers3, Mail, MapPin, Rocket, Smartphone, Sparkles, Users } from 'lucide-react';
+import { Briefcase, Code2, Facebook, Globe2, Instagram, Layers3, Mail, MapPin, Rocket, Smartphone, Sparkles, Twitter, Users, AtSign } from 'lucide-react';
 
 export const profile = {
   name: 'Tubagus Dhaifullah Zuhdi',
@@ -9,6 +9,10 @@ export const profile = {
   phone: '+62 817 7412 4858',
   linkedin: 'https://www.linkedin.com/in/tubagus-dhaifullah-zuhdi/',
   github: 'https://github.com/zudhhyy',
+  instagram: 'https://www.instagram.com/zudhhyy',
+  facebook: 'https://www.facebook.com/zudhyduddy',
+  twitter: 'https://x.com/Zudhhyy',
+  threads: 'https://www.threads.com/@zudhhyy',
   resume: '/resume-tubagus-dhaifullah-zuhdi.pdf',
   summary:
     'Senior Frontend Engineer with 5+ years of experience building scalable web and mobile products using React, Next.js, React Native, and TypeScript. Proven experience owning frontend architecture, establishing engineering standards, and delivering production applications across startups, enterprise use cases, and distributed teams.',
@@ -339,4 +343,11 @@ export const contactItems = [
   { icon: Globe2, label: 'LinkedIn', value: 'linkedin.com/in/tubagus-dhaifullah-zuhdi', href: profile.linkedin },
   { icon: Code2, label: 'GitHub', value: 'github.com/zudhhyy', href: profile.github },
   { icon: MapPin, label: 'Base', value: profile.location, href: '/contact' },
+];
+
+export const socialItems = [
+  { icon: Instagram, label: 'Instagram', value: '@zudhhyy', href: profile.instagram },
+  { icon: Facebook, label: 'Facebook', value: 'facebook.com/zudhyduddy', href: profile.facebook },
+  { icon: Twitter, label: 'X (Twitter)', value: '@Zudhhyy', href: profile.twitter },
+  { icon: AtSign, label: 'Threads', value: '@zudhhyy', href: profile.threads },
 ];
