@@ -121,7 +121,7 @@ export function TicTacToe() {
         return after;
       });
       setThinking(false);
-    }, 1000);
+    }, 750);
   }
 
   function reset() {

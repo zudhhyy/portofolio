@@ -1,5 +1,6 @@
 'use client';
 
+import confetti from 'canvas-confetti';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 const WIDTH = 420;
@@ -60,12 +61,22 @@ function initialState(): GameState {
   };
 }
 
+function fireWinConfetti() {
+  const colors = ['#93c5fd', '#c4b5fd', '#fde047', '#ffffff'];
+  confetti({ particleCount: 90, spread: 70, origin: { y: 0.55 }, colors });
+  setTimeout(() => {
+    confetti({ particleCount: 50, angle: 60, spread: 55, origin: { x: 0, y: 0.6 }, colors });
+    confetti({ particleCount: 50, angle: 120, spread: 55, origin: { x: 1, y: 0.6 }, colors });
+  }, 180);
+}
+
 export function BlockBreaker() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const gameRef = useRef<GameState>(initialState());
   const rafRef = useRef<number>(0);
   const scoreRef = useRef(0);
   const livesRef = useRef(3);
+  const confettiFiredRef = useRef(false);
 
   const [score, setScore] = useState(0);
   const [lives, setLives] = useState(3);
@@ -92,10 +103,18 @@ export function BlockBreaker() {
       g.running = false;
       g.attached = true;
 
+      confettiFiredRef.current = false;
       syncUi(keepScore ? scoreRef.current : 0, keepLives ? livesRef.current : 3, 'ready');
     },
     [syncUi],
   );
+
+  useEffect(() => {
+    if (status === 'won' && !confettiFiredRef.current) {
+      confettiFiredRef.current = true;
+      fireWinConfetti();
+    }
+  }, [status]);
 
   const launch = useCallback(() => {
     if (status === 'won') {
