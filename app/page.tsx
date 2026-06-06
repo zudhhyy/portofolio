@@ -1,3 +1,4 @@
+import { BlockBreaker } from '@/components/block-breaker';
 import { ExperienceTimeline } from '@/components/experience-timeline';
 import { ContactForm } from '@/components/contact-form';
 import { MotionDiv, Reveal } from '@/components/motion';
@@ -5,13 +6,13 @@ import { Navbar } from '@/components/navbar';
 import { ProjectExplorer } from '@/components/project-explorer';
 import { Section } from '@/components/section';
 import { SpinningEarth } from '@/components/spinning-earth';
-import { aboutHighlights, availability, contactItems, metrics, profile, skillGroups, testimonials } from '@/lib/data';
+import { aboutHighlights, availability, contactItems, profile, skillGroups } from '@/lib/data';
 import { openInNewTab } from '@/lib/link';
-import { ArrowRight, CheckCircle2, Download, Mail, MessageSquare, Sparkles } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Download, Mail, Sparkles } from 'lucide-react';
 
 export default function Home() {
   return (
-    <main className="relative z-10 min-h-screen overflow-hidden text-white">
+    <main className="relative z-10 min-h-screen pb-40 overflow-hidden text-white">
       <SpinningEarth />
       <Navbar />
       <FloatingStatus />
@@ -67,23 +68,7 @@ export default function Home() {
           </div>
 
           <Reveal delay={0.18} className="hidden lg:block" immediate>
-            <div className="glass relative rounded-lg p-5">
-              <div className="mb-4 flex items-center justify-between">
-                <div>
-                  <p className="text-sm text-neutral-400">Remote Operating System</p>
-                  <h2 className="text-xl font-semibold">Frontend Delivery Console</h2>
-                </div>
-                <span className="rounded-md bg-emerald-400/10 px-3 py-1 text-xs font-medium text-emerald-200">Online</span>
-              </div>
-              <div className="grid gap-3">
-                {metrics.map((metric) => (
-                  <div key={metric.label} className="rounded-lg border border-white/10 bg-black/20 p-4">
-                    <p className="text-3xl font-semibold text-white">{metric.value}</p>
-                    <p className="mt-1 text-sm leading-6 text-neutral-400">{metric.label}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <BlockBreaker />
           </Reveal>
         </div>
       </section>

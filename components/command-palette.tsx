@@ -1,10 +1,10 @@
 "use client";
 
 import { profile } from "@/lib/data";
-import { openHrefInNewTab } from "@/lib/link";
 import { Command, Download, ExternalLink, Mail, Search } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { MotionDiv } from "./motion";
+import { openHrefInNewTab } from "@/lib/link";
 
 const actions = [
   { label: "View Projects", hint: "Jump to selected work", href: "#projects", icon: Search },
@@ -40,7 +40,13 @@ export function CommandPalette() {
   function go(href: string) {
     setOpen(false);
     setQuery("");
-    openHrefInNewTab(href);
+    if (href.startsWith("#")) {
+      document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+      return;
+    } else {
+      openHrefInNewTab(href);
+      return;
+    }
   }
 
   return (
@@ -58,7 +64,7 @@ export function CommandPalette() {
       </button>
 
       {open ? (
-        <div className="fixed inset-0 z-50 flex items-start justify-center bg-black/60 px-4 pt-24 backdrop-blur-sm">
+        <div className="fixed inset-0 z-50 flex items-start justify-center h-screen bg-black/80 px-4 pt-24 backdrop-blur-sm">
           <button className="absolute inset-0 cursor-default" type="button" aria-label="Close command palette" onClick={() => setOpen(false)} />
           <MotionDiv
             initial={{ opacity: 0, y: 18, scale: 0.98 }}

@@ -113,7 +113,7 @@ export function ProjectExplorer() {
             transition={{ duration: 0.45, delay: index * 0.06 }}
             className="group glass overflow-hidden rounded-lg transition duration-300 hover:-translate-y-1 hover:border-blue-300/35"
           >
-            <div className={`relative h-48 overflow-hidden bg-gradient-to-br ${project.gradient}`}>
+            <div className={`relative h-40 overflow-hidden bg-gradient-to-br ${project.gradient}`}>
               <div className="absolute inset-0 dot-grid opacity-45" />
               <div className="absolute bottom-5 left-5 right-5">
                 <p className="text-xs font-semibold uppercase tracking-[0.22em] text-blue-100/80">

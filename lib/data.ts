@@ -248,7 +248,7 @@ export const experiences = [
     location: 'Bali, Indonesia',
     role: 'Senior Frontend Developer',
     period: 'Nov 2024 - Apr 2025',
-    tech: ['React', 'React Native', 'Payments', 'Release Readiness'],
+    tech: ['React', 'React Native', 'Payments', 'Revamp'],
     achievements: [
       'Developed web and mobile features for an event management platform.',
       'Resolved critical issues for payment processing, transaction history, and user workflows.',
