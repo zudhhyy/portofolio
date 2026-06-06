@@ -19,7 +19,7 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-40 border-b border-white/[0.06] bg-ink/70 backdrop-blur-xl">
+    <header className="fixed inset-x-0 top-0 z-40 border-b border-white/[0.06] bg-ink/20 backdrop-blur-xl">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-8">
         <a href="#home" className="focus-ring flex shrink-0 items-center rounded-md">
           <Image src="/tdz-logo.png" alt="Tubagus Dhaifullah Zuhdi" width={362} height={306} className="h-9 w-auto sm:h-10" priority />

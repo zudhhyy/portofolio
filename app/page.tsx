@@ -17,7 +17,7 @@ export default function Home() {
       <Navbar />
       <FloatingStatus />
 
-      <section id="home" className="relative flex min-h-screen items-center px-5 pt-24 sm:px-8">
+      <section id="home" className="relative flex min-h-screen items-center px-5 sm:px-8">
         <div className="relative mx-auto grid w-full max-w-7xl gap-12 lg:grid-cols-[1.08fr_0.92fr] lg:items-center">
           <div>
             <Reveal immediate>
@@ -150,7 +150,7 @@ export default function Home() {
             <div>
               <h3 className="text-2xl font-semibold text-white">Available for Remote Opportunities</h3>
               <p className="mt-3 max-w-2xl leading-7 text-neutral-400">
-                Interested in frontend leadership, full-stack JavaScript delivery, React Native product work, and contract engagements with
+                Interested in frontend development, full-stack JavaScript development, React Native product work, and contract engagements with
                 teams that value clarity, quality, and momentum.
               </p>
             </div>
@@ -173,7 +173,7 @@ export default function Home() {
         id="contact"
         eyebrow="Contact"
         title="Let’s build something scalable, elegant, and ready for production."
-        description="Reach out for remote roles, freelance builds, technical leadership, or product engineering collaboration."
+        description="Reach out for full time roles, contract roles, remote roles, freelance builds, or product engineering collaboration."
       >
         <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="space-y-[18px]">

@@ -77,6 +77,7 @@ export const technologies = ['All', 'React', 'Next.js', 'TypeScript', 'React Nat
 export type Project = {
   name: string;
   type: string;
+  company: string;
   description: string;
   stack: string[];
   achievements: string[];
@@ -90,6 +91,7 @@ export const projects: Project[] = [
   {
     name: 'Conture',
     type: 'Webtoon & Novel Platform',
+    company: 'Cigro',
     description:
       'Creator and reader platform with content workflows, virtual currency, settlements, withdrawals, and type-safe backend communication.',
     stack: ['Next.js', 'TypeScript', 'Turborepo', 'Orval', 'TanStack Query'],
@@ -103,6 +105,7 @@ export const projects: Project[] = [
   {
     name: 'Uobong',
     type: 'Hiking App Mobile & Website',
+    company: 'Cigro',
     description:
       'Cross-platform hiking product with geofencing, quest completion, achievement tracking, and background location synchronization.',
     stack: ['Expo', 'React Native', 'TypeScript', 'Next.js', 'Turborepo'],
@@ -113,10 +116,13 @@ export const projects: Project[] = [
     ],
     gradient: 'from-cyan-500/25 via-blue-500/20 to-emerald-400/10',
     playStore: 'https://play.google.com/store/apps/details?id=com.uobong.app&hl=id',
+    appStore: 'https://apps.apple.com/us/app/%EC%9A%B0%EC%98%A4%EB%B4%89-%EB%93%B1%EC%82%B0-%EC%9D%B8%EC%A6%9D%EC%9D%80-%EC%9A%B0%EC%98%A4%EB%B4%89-%EB%A6%AC%EA%B7%B8%ED%98%95-%EB%93%B1%EC%82%B0-%ED%94%8C%EB%9E%AB%ED%8F%BC/id6742874796',
+    web: 'https://uobong.app/'
   },
   {
     name: 'CHI App',
     type: 'Event Wallet & Ticketing',
+    company: 'EventCHI',
     description:
       'Mobile app for event wallets, ticket management, and event payments across Android and iOS.',
     stack: ['React Native', 'TypeScript', 'REST APIs', 'Payments'],
@@ -132,6 +138,7 @@ export const projects: Project[] = [
   {
     name: 'Event CHI Backstage',
     type: 'Event Admin Platform',
+    company: 'EventCHI',
     description:
       'Revamped legacy admin panel codebase, migrating from JavaScript to TypeScript while modernizing features for event organizers.',
     stack: ['React', 'TypeScript', 'Redux', 'REST APIs'],
@@ -146,6 +153,7 @@ export const projects: Project[] = [
   {
     name: 'SunLike MTE',
     type: 'Smart Lighting Mobile App',
+    company: 'Healstation',
     description:
       'Android and iOS application for Seoul Semiconductor to manage home lighting systems with hardware communication over Wi-Fi.',
     stack: ['React Native', 'TypeScript', 'Zustand', 'TCP/UDP'],
@@ -160,6 +168,7 @@ export const projects: Project[] = [
   {
     name: 'Caffeine Addicted',
     type: 'Coffee Shop Mobile App',
+    company: 'Healstation',
     description:
       'Android and iOS applications for a Korean coffee shop, serving both store and customer ordering interfaces.',
     stack: ['React Native', 'TypeScript', 'Zustand', 'Nicepay'],
@@ -175,6 +184,7 @@ export const projects: Project[] = [
   {
     name: 'Forslice',
     type: 'Property Tokenization Platform',
+    company: 'Desociety',
     description:
       'Built and shipped the full marketing website for a Singapore-based real estate tokenization startup using Next.js 15, TypeScript, and Tailwind CSS 4.',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'App Router'],
@@ -184,10 +194,12 @@ export const projects: Project[] = [
       'Implemented shared layout, navigation, and global state management for a consistent user experience',
     ],
     gradient: 'from-sky-500/25 via-blue-500/20 to-indigo-400/10',
+    web: 'https://forslice.com/',
   },
   {
     name: 'Soulful Goddess',
     type: 'Yoga Retreat & Wellness Platform',
+    company: 'Desociety',
     description:
       'Built the full marketing website for Soulful Goddess, a transformative yoga retreat brand in Mallorca by Vanessa Wolter — from retreat promotion and storytelling to testimonials, sign-up flows, and community engagement.',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'i18n'],
@@ -202,6 +214,7 @@ export const projects: Project[] = [
   {
     name: 'Poopooville',
     type: 'Web3 DApp Platform',
+    company: 'Desociety',
     description:
       'DApp platform for buying and selling NFT collections, creating NFT lotteries, and facilitating ERC20 token sales.',
     stack: ['React', 'TypeScript', 'Web3', 'Ethers.js', 'Wagmi', 'WalletConnect'],
@@ -216,6 +229,7 @@ export const projects: Project[] = [
   {
     name: 'Omakasea',
     type: 'Web3 NFT Platform',
+    company: 'Desociety',
     description:
       'Application platform for creating, buying, and selling NFTs on the Ethereum network.',
     stack: ['React', 'TypeScript', 'Web3', 'Ethers.js', 'Chakra UI'],
@@ -230,6 +244,7 @@ export const projects: Project[] = [
   {
     name: 'Mooncake',
     type: 'Web3 Token Platform',
+    company: 'Desociety',
     description:
       'DApp website for buying, selling, and viewing real-time charts of Mooncake tokens on Binance Smart Chain.',
     stack: ['React', 'TypeScript', 'Web3', 'Ethers.js', 'Tailwind CSS'],

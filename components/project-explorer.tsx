@@ -13,12 +13,12 @@ function ProjectLinks({ project }: { project: Project }) {
   if (!hasLinks) return null;
 
   return (
-    <div className="mt-6 flex flex-wrap gap-3">
+    <div className="flex flex-wrap gap-3 absolute bottom-5 left-5">
       {project.web ? (
         <a
           href={project.web}
           {...openInNewTab}
-          className="focus-ring inline-flex items-center gap-2 rounded-md bg-white px-3 py-2 text-sm font-medium text-neutral-950 transition hover:bg-blue-100"
+          className="focus-ring inline-flex items-center gap-2 rounded-md border border-white/10 px-3 py-2 text-sm font-medium text-white transition hover:border-blue-300/40 hover:bg-white/[0.05]"
         >
           <ExternalLink size={16} />
           Live Site
@@ -111,7 +111,7 @@ export function ProjectExplorer() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.45, delay: index * 0.06 }}
-            className="group glass overflow-hidden rounded-lg transition duration-300 hover:-translate-y-1 hover:border-blue-300/35"
+            className="group glass overflow-hidden rounded-lg transition duration-300 hover:-translate-y-1 hover:border-blue-300/35 pb-14 lg:pb-20 relative"
           >
             <div className={`relative h-40 overflow-hidden bg-gradient-to-br ${project.gradient}`}>
               <div className="absolute inset-0 dot-grid opacity-45" />
@@ -122,7 +122,7 @@ export function ProjectExplorer() {
                 <h3 className="mt-2 text-3xl font-semibold tracking-tight text-white">{project.name}</h3>
               </div>
               <div className="absolute right-5 top-5 rounded-md border border-white/10 bg-black/20 px-3 py-1 text-xs text-white/80 backdrop-blur-md">
-                Featured
+                {project.company}
               </div>
             </div>
             <div className="p-5 sm:p-6">
