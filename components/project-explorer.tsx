@@ -6,8 +6,6 @@ import { ExternalLink, Search, Smartphone } from "lucide-react";
 import { useMemo, useState } from "react";
 import { MotionDiv } from "./motion";
 
-const INITIAL_VISIBLE = 4;
-
 function ProjectLinks({ project }: { project: Project }) {
   const hasLinks = project.web || project.playStore || project.appStore;
   if (!hasLinks) return null;
@@ -51,7 +49,6 @@ function ProjectLinks({ project }: { project: Project }) {
 export function ProjectExplorer() {
   const [active, setActive] = useState("All");
   const [query, setQuery] = useState("");
-  const [showAll, setShowAll] = useState(false);
 
   const filteredProjects = useMemo(() => {
     return projects.filter((project) => {
@@ -63,9 +60,6 @@ export function ProjectExplorer() {
     });
   }, [active, query]);
 
-  const visibleProjects = showAll ? filteredProjects : filteredProjects.slice(0, INITIAL_VISIBLE);
-  const hasMore = filteredProjects.length > INITIAL_VISIBLE;
-
   return (
     <div>
       <div className="mb-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
@@ -74,10 +68,7 @@ export function ProjectExplorer() {
             <button
               key={tech}
               type="button"
-              onClick={() => {
-                setActive(tech);
-                setShowAll(false);
-              }}
+              onClick={() => setActive(tech)}
               className={`focus-ring whitespace-nowrap rounded-md border px-3 py-2 text-sm transition ${
                 active === tech
                   ? "border-blue-300/50 bg-blue-400/12 text-blue-100"
@@ -93,10 +84,7 @@ export function ProjectExplorer() {
           <Search size={16} />
           <input
             value={query}
-            onChange={(event) => {
-              setQuery(event.target.value);
-              setShowAll(false);
-            }}
+            onChange={(event) => setQuery(event.target.value)}
             placeholder="Search projects"
             className="w-full bg-transparent text-white outline-none placeholder:text-neutral-500"
           />
@@ -104,7 +92,7 @@ export function ProjectExplorer() {
       </div>
 
       <div className="grid gap-5 lg:grid-cols-2">
-        {visibleProjects.map((project, index) => (
+        {filteredProjects.map((project, index) => (
           <MotionDiv
             key={project.name}
             initial={{ opacity: 0, y: 22 }}
@@ -147,18 +135,6 @@ export function ProjectExplorer() {
           </MotionDiv>
         ))}
       </div>
-
-      {hasMore ? (
-        <div className="mt-4 text-center">
-          <button
-            type="button"
-            onClick={() => setShowAll((value) => !value)}
-            className="focus-ring text-xl font-medium text-neutral-400 transition hover:text-white"
-          >
-            {showAll ? "Show less" : "See more"}
-          </button>
-        </div>
-      ) : null}
     </div>
   );
 }
