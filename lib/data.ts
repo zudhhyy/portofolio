@@ -89,7 +89,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    name: 'Conture',
+    name: 'Conture ( 쟈근친구들 )',
     type: 'Webtoon & Novel Platform',
     company: 'Cigro',
     description:
@@ -103,7 +103,7 @@ export const projects: Project[] = [
     gradient: 'from-blue-500/30 via-blue-500/15 to-cyan-400/10',
   },
   {
-    name: 'Uobong',
+    name: 'Uobong ( 우오봉 )',
     type: 'Hiking App Mobile & Website',
     company: 'Cigro',
     description:
@@ -117,7 +117,7 @@ export const projects: Project[] = [
     gradient: 'from-blue-500/30 via-blue-500/15 to-cyan-400/10',
     playStore: 'https://play.google.com/store/apps/details?id=com.uobong.app&hl=id',
     appStore: 'https://apps.apple.com/us/app/%EC%9A%B0%EC%98%A4%EB%B4%89-%EB%93%B1%EC%82%B0-%EC%9D%B8%EC%A6%9D%EC%9D%80-%EC%9A%B0%EC%98%A4%EB%B4%89-%EB%A6%AC%EA%B7%B8%ED%98%95-%EB%93%B1%EC%82%B0-%ED%94%8C%EB%9E%AB%ED%8F%BC/id6742874796',
-    web: 'https://uobong.app/'
+    web: 'https://uobong.com/'
   },
   {
     name: 'CHI App',
@@ -166,7 +166,7 @@ export const projects: Project[] = [
     playStore: 'https://play.google.com/store/apps/details?id=com.seoulsemicon.sunlikemte',
   },
   {
-    name: 'Caffeine Addicted',
+    name: 'Caffeine Addicted ( 카페인중독 )',
     type: 'Coffee Shop Mobile App',
     company: 'Healstation',
     description:
