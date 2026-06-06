@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tubagus-zuhdi.dev"),
+  metadataBase: new URL("https://tubaguszuhdi.com"),
   title: {
-    default: "Tubagus Dhaifullah Zuhdi | Senior Frontend Engineer",
-    template: "%s | Tubagus Dhaifullah Zuhdi",
+    default: "Tubagus D Zuhdi | Senior Frontend Engineer",
+    template: "%s | Tubagus D Zuhdi",
   },
   description:
     "Senior Frontend Engineer and Full-Stack JavaScript Developer building scalable React, Next.js, TypeScript, and React Native products for remote teams worldwide.",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   openGraph: {
-    title: "Tubagus Dhaifullah Zuhdi | Senior Frontend Engineer",
+    title: "Tubagus D Zuhdi | Senior Frontend Engineer",
     description:
-      "Portfolio for a senior frontend engineer building scalable web and mobile products with React, Next.js, TypeScript, and React Native.",
+      "Tubagus D Zuhdi's Portfolio - Building web and mobile products with React, Next.js, TypeScript, and React Native.",
     type: "website",
   },
 };
