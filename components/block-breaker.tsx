@@ -103,7 +103,7 @@ export function BlockBreaker() {
   useEffect(() => {
     if (status === 'won' && !confettiFiredRef.current) {
       confettiFiredRef.current = true;
-      fireWinConfetti();
+      void fireWinConfetti();
     }
   }, [status]);
 

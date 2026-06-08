@@ -16,7 +16,7 @@ export function Reveal({ children, delay = 0, className, immediate = false }: Re
   return (
     <motion.div
       className={className}
-      initial={reduceMotion ? false : { opacity: 0, y: 26 }}
+      initial={immediate || reduceMotion ? false : { opacity: 0, y: 26 }}
       animate={immediate && !reduceMotion ? { opacity: 1, y: 0 } : undefined}
       whileInView={!immediate && !reduceMotion ? { opacity: 1, y: 0 } : undefined}
       viewport={!immediate ? { once: true, margin: "-80px" } : undefined}

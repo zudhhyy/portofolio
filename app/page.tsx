@@ -1,4 +1,4 @@
-import { GameCarousel } from '@/components/game-carousel';
+import { DeferredGameCarousel, DeferredSpinningEarth } from '@/components/home-deferred';
 import { MotionDiv, Reveal } from '@/components/motion';
 import { Navbar } from '@/components/navbar';
 import { AboutSection } from '@/components/sections/about-section';
@@ -7,15 +7,13 @@ import { ContactSection } from '@/components/sections/contact-section';
 import { ExperienceSection } from '@/components/sections/experience-section';
 import { ProjectsSection } from '@/components/sections/projects-section';
 import { SkillsSection } from '@/components/sections/skills-section';
-import { SpinningEarth } from '@/components/spinning-earth';
 import { profile } from '@/lib/data';
 import { openInNewTab } from '@/lib/link';
 import { ArrowRight, Download, Mail, Sparkles } from 'lucide-react';
-
 export default function Home() {
   return (
     <main className="relative z-10 min-h-screen overflow-hidden pb-20 text-white">
-      <SpinningEarth />
+      <DeferredSpinningEarth />
       <Navbar />
       <FloatingStatus />
 
@@ -68,7 +66,7 @@ export default function Home() {
           </div>
 
           <Reveal delay={0.18} className="hidden lg:block" immediate>
-            <GameCarousel />
+            <DeferredGameCarousel />
           </Reveal>
         </div>
       </section>

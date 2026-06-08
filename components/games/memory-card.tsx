@@ -81,7 +81,7 @@ export function MemoryCard() {
   useEffect(() => {
     if (won && !confettiFiredRef.current) {
       confettiFiredRef.current = true;
-      fireWinConfetti();
+      void fireWinConfetti();
     }
   }, [won]);
 

@@ -102,7 +102,7 @@ export function TicTacToe() {
   useEffect(() => {
     if (winner === 'X' && !confettiFiredRef.current) {
       confettiFiredRef.current = true;
-      fireWinConfetti();
+      void fireWinConfetti();
     }
   }, [winner]);
 

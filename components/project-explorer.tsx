@@ -15,6 +15,7 @@ function ProjectLinks({ project }: { project: Project }) {
       {project.web ? (
         <a
           href={project.web}
+          aria-label={`${project.name} live site`}
           {...openInNewTab}
           className="focus-ring inline-flex items-center gap-2 rounded-md border border-white/10 px-3 py-2 text-sm font-medium text-white transition hover:border-blue-300/40 hover:bg-white/[0.05]"
         >
@@ -25,6 +26,7 @@ function ProjectLinks({ project }: { project: Project }) {
       {project.playStore ? (
         <a
           href={project.playStore}
+          aria-label={`${project.name} Play Store`}
           {...openInNewTab}
           className="focus-ring inline-flex items-center gap-2 rounded-md border border-white/10 px-3 py-2 text-sm font-medium text-white transition hover:border-blue-300/40 hover:bg-white/[0.05]"
         >
@@ -35,6 +37,7 @@ function ProjectLinks({ project }: { project: Project }) {
       {project.appStore ? (
         <a
           href={project.appStore}
+          aria-label={`${project.name} App Store`}
           {...openInNewTab}
           className="focus-ring inline-flex items-center gap-2 rounded-md border border-white/10 px-3 py-2 text-sm font-medium text-white transition hover:border-blue-300/40 hover:bg-white/[0.05]"
         >

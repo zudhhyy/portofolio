@@ -1,14 +1,22 @@
 'use client';
 
-import { BlockBreaker } from '@/components/block-breaker';
-import { Battleship } from '@/components/games/battleship';
-import { MemoryCard } from '@/components/games/memory-card';
-import { Minesweeper } from '@/components/games/minesweeper';
-import { TicTacToe } from '@/components/games/tic-tac-toe';
+import dynamic from 'next/dynamic';
+import type { ComponentType } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
 
-const games = [
+const BlockBreaker = dynamic(() => import('@/components/block-breaker').then((m) => ({ default: m.BlockBreaker })));
+const Battleship = dynamic(() => import('@/components/games/battleship').then((m) => ({ default: m.Battleship })));
+const TicTacToe = dynamic(() => import('@/components/games/tic-tac-toe').then((m) => ({ default: m.TicTacToe })));
+const Minesweeper = dynamic(() => import('@/components/games/minesweeper').then((m) => ({ default: m.Minesweeper })));
+const MemoryCard = dynamic(() => import('@/components/games/memory-card').then((m) => ({ default: m.MemoryCard })));
+
+const games: {
+  id: string;
+  title: string;
+  hint: string;
+  component: ComponentType;
+}[] = [
   {
     id: 'block-breaker',
     title: 'Block Breaker',
@@ -39,7 +47,7 @@ const games = [
     hint: 'Match all 8 pairs with the fewest moves',
     component: MemoryCard,
   },
-] as const;
+];
 
 export function GameCarousel() {
   const [index, setIndex] = useState(0);
