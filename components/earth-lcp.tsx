@@ -1,27 +1,10 @@
-"use client";
-
 import type { ReactNode } from "react";
-import { useEffect, useState } from "react";
 
-type EarthBackgroundProps = {
-  spin?: boolean;
+type EarthLcpProps = {
   children?: ReactNode;
 };
 
-export function EarthBackground({ spin = true, children }: EarthBackgroundProps) {
-  const [rotation, setRotation] = useState(0);
-
-  useEffect(() => {
-    if (!spin) return;
-
-    const handleScroll = () => {
-      setRotation(window.scrollY * 0.1);
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [spin]);
-
+export function EarthLcp({ children }: EarthLcpProps) {
   return (
     <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-primary-background-start to-primary-background-end" />
@@ -30,14 +13,17 @@ export function EarthBackground({ spin = true, children }: EarthBackgroundProps)
         <div className="animate-float">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
+            id="earth-lcp"
             src="/background/spinning-earth.webp"
+            srcSet="/background/spinning-earth-640.webp 640w, /background/spinning-earth.webp 1000w"
+            sizes="(max-width: 1024px) 100vw, 1000px"
             alt=""
             aria-hidden
             width={1000}
             height={1000}
-            fetchPriority="low"
+            fetchPriority="high"
+            decoding="async"
             className="h-auto w-full max-w-[1000px]"
-            style={{ transform: `rotate(${rotation}deg)` }}
           />
         </div>
       </div>

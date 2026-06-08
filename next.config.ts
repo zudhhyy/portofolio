@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   experimental: {
     optimizePackageImports: ["framer-motion", "lucide-react"],
+    inlineCss: true,
   },
 };
 

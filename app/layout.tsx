@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { CursorTrail } from "@/components/cursor-trail";
+import { DeferredCursorTrail } from "@/components/deferred-cursor-trail";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -53,8 +53,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <link
+          rel="preload"
+          as="image"
+          href="/background/spinning-earth-640.webp"
+          type="image/webp"
+          media="(max-width: 1024px)"
+          fetchPriority="high"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/background/spinning-earth.webp"
+          type="image/webp"
+          media="(min-width: 1025px)"
+          fetchPriority="high"
+        />
+      </head>
       <body className="font-sans antialiased">
-        <CursorTrail />
+        <DeferredCursorTrail />
         {children}
       </body>
     </html>

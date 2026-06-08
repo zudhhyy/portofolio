@@ -2,8 +2,8 @@
 
 import dynamic from 'next/dynamic';
 
-export const DeferredSpinningEarth = dynamic(
-  () => import('@/components/spinning-earth').then((m) => ({ default: m.SpinningEarth })),
+export const DeferredStarField = dynamic(
+  () => import('@/components/star-field').then((m) => ({ default: m.StarField })),
   { ssr: false },
 );
 
