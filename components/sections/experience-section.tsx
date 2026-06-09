@@ -6,7 +6,7 @@ export function ExperienceSection() {
     <Section
       id="experience"
       eyebrow="Experience"
-      title="A timeline of shipped products, architecture decisions, and cross-team collaboration."
+      title="Where I've Worked, What I've Built, and Who I've Collaborated With."
     >
       <ExperienceTimeline />
     </Section>

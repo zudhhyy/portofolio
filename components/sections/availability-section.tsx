@@ -10,8 +10,8 @@ export function AvailabilitySection() {
           <div>
             <h3 className="text-2xl font-semibold text-white">Available for Remote & Onsite Opportunities</h3>
             <p className="mt-3 max-w-2xl leading-7 text-neutral-400">
-              Interested in frontend development, React Native product work, and contract engagements — whether your team is
-              distributed, hybrid, or in-office.
+              Interested in frontend development, React Native product work, and contract engagements, whether your team is
+              distributed, hybrid, or in office.
             </p>
           </div>
           <div className="flex flex-wrap gap-2">

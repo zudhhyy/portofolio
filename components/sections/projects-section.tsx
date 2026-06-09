@@ -6,8 +6,8 @@ export function ProjectsSection() {
     <Section
       id="projects"
       eyebrow="Featured Projects"
-      title="Selected systems across SaaS, mobile, commerce, events, and Web3."
-      description="Search and filter projects by technology. Public links can be swapped in when client permissions allow."
+      title="A few things I've built and shipped along the way."
+      description="Browse by stack, explore the details, and check out what's live. Some client work stays private. Happy to walk through more on a call."
     >
       <ProjectExplorer />
     </Section>
