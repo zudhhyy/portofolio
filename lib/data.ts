@@ -105,6 +105,7 @@ export const projects: Project[] = [
       'Integrated OpenAPI-generated clients for reliable API contracts',
     ],
     gradient: 'from-blue-500/30 via-blue-500/15 to-cyan-400/10',
+    web: 'https://conture.co.kr/'
   },
   {
     name: 'Uobong ( 우오봉 )',
