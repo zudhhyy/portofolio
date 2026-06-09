@@ -10,7 +10,7 @@ export function EarthLcp({ children }: EarthLcpProps) {
       <div className="absolute inset-0 bg-gradient-to-b from-primary-background-start to-primary-background-end" />
       {children}
       <div className="fixed -bottom-[35%] left-0 right-0 z-0 mx-auto flex animate-slide-up justify-center lg:-bottom-[80%]">
-        <div className="animate-float">
+        <div className="animate-spin-slow">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             id="earth-lcp"

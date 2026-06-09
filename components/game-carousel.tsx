@@ -66,7 +66,9 @@ export function GameCarousel() {
     <div className="glass relative rounded-lg p-5">
       <div className="mb-3 flex items-center justify-between gap-3">
         <div>
-          <p className="text-sm text-neutral-400">Mini Games</p>
+          <p className="text-sm text-neutral-400 bold">
+            Mini Games <span className="text-xs text-white">({index + 1}/{games.length})</span>
+          </p>
           <h2 className="text-xl font-semibold">{game.title}</h2>
         </div>
         <div className="flex items-center gap-1">
@@ -98,14 +100,12 @@ export function GameCarousel() {
             type="button"
             onClick={() => setIndex(i)}
             aria-label={`Show ${item.title}`}
-            className={`focus-ring h-2 rounded-full transition ${
-              i === index ? 'w-6 bg-blue-300' : 'w-2 bg-white/25 hover:bg-white/40'
-            }`}
+            className={`focus-ring h-2 rounded-full transition ${i === index ? 'w-6 bg-blue-300' : 'w-2 bg-white/25 hover:bg-white/40'}`}
           />
         ))}
       </div>
 
-      <p className="mt-2 text-center text-xs text-neutral-500">{game.hint}</p>
+      <p className="mt-2 text-center text-xs text-white">{game.hint}</p>
     </div>
   );
 }

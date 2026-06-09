@@ -47,14 +47,14 @@ export default function Home() {
               <a
                 href={profile.resume}
                 {...openInNewTab}
-                className="focus-ring inline-flex items-center justify-center gap-2 rounded-md border border-white/10 bg-white/[0.04] px-5 py-3 text-sm font-semibold text-white transition hover:border-blue-300/40 hover:bg-white/[0.08]"
+                className="glass focus-ring inline-flex items-center justify-center gap-2 rounded-md border border-white/10 bg-white/[0.04] px-5 py-3 text-sm font-semibold text-white transition hover:border-blue-300/40 hover:bg-white/[0.08]"
               >
                 <Download size={17} />
                 Download Resume
               </a>
               <a
                 href="/contact"
-                className="focus-ring inline-flex items-center justify-center gap-2 rounded-md border border-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:border-violet-300/40 hover:bg-white/[0.05]"
+                className="glass focus-ring inline-flex items-center justify-center gap-2 rounded-md border border-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:border-violet-300/40 hover:bg-white/[0.05]"
               >
                 <Mail size={17} />
                 Contact Me

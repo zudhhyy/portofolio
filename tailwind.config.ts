@@ -46,11 +46,17 @@ const config: Config = {
           "0%": { opacity: "0", transform: "translateY(100%)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
+        spinSlow: {
+          "0%": { transform: "rotate(0deg) translateY(0)" },
+          "50%": { transform: "rotate(180deg) translateY(-15px)" },
+          "100%": { transform: "rotate(360deg) translateY(0)" },
+        },
       },
       animation: {
         float: "float 3s ease-in-out infinite",
         shimmer: "shimmer 8s linear infinite",
         "slide-up": "slideUp 0.75s ease-out forwards",
+        "spin-slow": "spinSlow 30s linear infinite",
       },
     },
   },
