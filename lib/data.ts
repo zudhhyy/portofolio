@@ -254,9 +254,9 @@ export const projects: Project[] = [
       'DApp website for buying, selling, and viewing real-time charts of Mooncake tokens on Binance Smart Chain.',
     stack: ['React', 'TypeScript', 'Web3', 'Ethers.js', 'Tailwind CSS'],
     achievements: [
-      'Integrated Binance Smart Chain to facilitate token transactions',
+      'Developed a DeFi decentralized application (dApp) frontend on Binance Smart Chain integrating with existing AMM protocols such as PancakeSwap',
       'Implemented real-time chart updates for token trading activity',
-      'Built performant front-end with React, TypeScript, and Tailwind CSS',
+      'Implemented token swap functionality using smart contract interactions, with slippage control and transaction handling.',
     ],
     gradient: 'from-emerald-500/30 via-emerald-500/15 to-teal-400/10',
     web: 'https://mooncake.io',
