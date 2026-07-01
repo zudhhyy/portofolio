@@ -1,7 +1,7 @@
 'use client';
 
 import { track } from '@vercel/analytics';
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from '@vercel/analytics/next';
 import { useEffect } from 'react';
 
 function getClickLabel(element: HTMLElement) {
