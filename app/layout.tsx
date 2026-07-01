@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DeferredCursorTrail } from "@/components/deferred-cursor-trail";
+import { VercelAnalytics } from "@/components/vercel-analytics";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -74,6 +75,7 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         <DeferredCursorTrail />
         {children}
+        <VercelAnalytics />
       </body>
     </html>
   );

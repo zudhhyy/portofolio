@@ -24,7 +24,7 @@ export function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-40 border-b border-white/[0.06] bg-ink/20 backdrop-blur-xl">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-8">
-        <Link href="/" className="focus-ring flex shrink-0 items-center rounded-md">
+        <Link href="/" data-analytics="nav-logo" className="focus-ring flex shrink-0 items-center rounded-md">
           <Image src="/tdz-logo.png" alt="Tubagus Dhaifullah Zuhdi" width={362} height={306} className="h-9 w-auto sm:h-10" priority />
         </Link>
 
@@ -33,6 +33,7 @@ export function Navbar() {
             <Link
               key={link.href}
               href={link.href}
+              data-analytics={`nav-${link.label.toLowerCase()}`}
               className={`focus-ring rounded-md px-3 py-2 text-sm transition ${
                 pathname === link.href ? 'text-white' : 'text-neutral-400 hover:text-white'
               }`}
@@ -46,6 +47,7 @@ export function Navbar() {
           <CommandPalette />
           <a
             href={profile.resume}
+            data-analytics="nav-download-resume"
             {...openInNewTab}
             className="focus-ring inline-flex items-center gap-2 rounded-md bg-white px-3 py-2 text-sm font-medium text-neutral-950 transition hover:bg-blue-100"
           >
@@ -71,6 +73,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
+                data-analytics={`nav-mobile-${link.label.toLowerCase()}`}
                 onClick={() => setOpen(false)}
                 className={`rounded-md px-3 py-3 text-sm ${pathname === link.href ? 'text-white' : 'text-neutral-300'}`}
               >
@@ -80,6 +83,7 @@ export function Navbar() {
             <div className="mt-2 px-3">
               <a
                 href={profile.resume}
+                data-analytics="nav-mobile-download-resume"
                 {...openInNewTab}
                 className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-white px-3 py-2 text-sm font-medium text-neutral-950"
               >

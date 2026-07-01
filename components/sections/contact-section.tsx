@@ -19,6 +19,7 @@ export function ContactSection() {
               <a
                 key={item.label}
                 href={item.href}
+                data-analytics={`contact-${item.label.toLowerCase().replace(/\s+/g, '-')}`}
                 {...openInNewTab}
                 className="glass flex items-center gap-4 rounded-lg p-4 transition hover:border-blue-300/35"
               >
@@ -46,6 +47,7 @@ export function ContactSection() {
                 <a
                   key={item.label}
                   href={item.href}
+                  data-analytics={`social-${item.label.toLowerCase()}`}
                   {...openInNewTab}
                   className="focus-ring flex items-center gap-3 rounded-md border border-white/10 bg-white/[0.04] px-3 py-2.5 transition hover:border-blue-300/40 hover:bg-white/[0.06]"
                 >

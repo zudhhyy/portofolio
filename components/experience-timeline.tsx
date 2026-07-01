@@ -32,6 +32,7 @@ export function ExperienceTimeline() {
               <span className="absolute left-2 top-6 hidden size-3 rounded-full border border-blue-200 bg-blue-400 shadow-glow sm:block" />
               <button
                 type="button"
+                data-analytics={`experience-toggle-${experience.company.toLowerCase().replace(/\s+/g, '-')}`}
                 onClick={() => handleClick(experience.company)}
                 className="glass focus-ring w-full rounded-lg p-5 text-left transition hover:border-blue-300/35"
                 aria-expanded={open.includes(experience.company)}

@@ -55,6 +55,7 @@ export function CommandPalette() {
     <>
       <button
         type="button"
+        data-analytics="command-palette-open"
         onClick={() => setOpen(true)}
         className="focus-ring hidden items-center gap-2 rounded-md border border-white/10 bg-white/[0.04] px-3 py-2 text-sm text-neutral-300 transition hover:border-blue-300/40 hover:text-white sm:inline-flex"
       >
@@ -90,6 +91,7 @@ export function CommandPalette() {
                   <button
                     key={action.label}
                     type="button"
+                    data-analytics={`command-${action.label.toLowerCase().replace(/\s+/g, '-')}`}
                     onClick={() => go(action.href)}
                     className="flex w-full items-center gap-3 rounded-md px-3 py-3 text-left transition hover:bg-white/[0.07]"
                   >

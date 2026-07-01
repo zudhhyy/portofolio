@@ -115,6 +115,7 @@ export function ContactForm() {
       </label>
       <button
         type="submit"
+        data-analytics="contact-form-submit"
         disabled={isLoading}
         className="focus-ring mt-5 inline-flex w-full items-center justify-center gap-2 rounded-md bg-accent-gradient px-5 py-3 text-sm font-semibold text-white shadow-glow transition hover:opacity-95 disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto"
       >

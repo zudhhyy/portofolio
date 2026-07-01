@@ -39,6 +39,7 @@ export default function Home() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
                 href="/projects"
+                data-analytics="hero-view-projects"
                 className="focus-ring inline-flex items-center justify-center gap-2 rounded-md bg-white px-5 py-3 text-sm font-semibold text-neutral-950 transition hover:bg-blue-100"
               >
                 View Projects
@@ -46,6 +47,7 @@ export default function Home() {
               </a>
               <a
                 href={profile.resume}
+                data-analytics="hero-download-resume"
                 {...openInNewTab}
                 className="glass focus-ring inline-flex items-center justify-center gap-2 rounded-md border border-white/10 bg-white/[0.04] px-5 py-3 text-sm font-semibold text-white transition hover:border-blue-300/40 hover:bg-white/[0.08]"
               >
@@ -54,6 +56,7 @@ export default function Home() {
               </a>
               <a
                 href="/contact"
+                data-analytics="hero-contact-me"
                 className="glass focus-ring inline-flex items-center justify-center gap-2 rounded-md border border-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:border-violet-300/40 hover:bg-white/[0.05]"
               >
                 <Mail size={17} />
